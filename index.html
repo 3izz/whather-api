@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+     
+</head>
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand brand1" href="#" id="brand1">City Weather </a>
+    <h3 id="temp1" style = "color: #fff;margin-top: 8px;"></h3>
+    <button class="navbar-toggler gradient-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar">
+  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="url(#grad1)" class="bi bi-list" viewBox="0 0 16 16">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:rgb(248, 247, 247); stop-opacity:1" />
+        <stop offset="50%" style="stop-color:rgb(226, 226, 223); stop-opacity:1" />
+        <stop offset="100%" style="stop-color:rgb(246, 246, 246); stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <path d="M2.5 12.5h11v1h-11v-1zm0-5h11v1h-11v-1zm0-5h11v1h-11v-1z"/>
+  </svg>
+</button>
+
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">CityWeather</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+             
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<body><div class="container c1" style="text-align:center;">
+ 
+  <input type="text" id="city" placeholder="Enter city" class="cool-input">
+  <ul id="results" class="ul1"></ul>
+<button onclick="getwether() " class="cool-btn">Get Weather</button>
+
+ <div id="result" style ="text-align:center; margin-top: 20px;font-size: 20px; ">
+
+</div>
+<div id="advise" style ="text-align:center; margin-top: 20px;font-size: large; ">
+
+</div>
+<div id="icon" style ="text-align:center; margin-top: 20px ;"></div>
+
+
+</div>
+ 
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

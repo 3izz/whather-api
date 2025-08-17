@@ -1,0 +1,156 @@
+.brand1 {
+  font-family: fantasy;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  color:  #fff; /* أبيض */
+  text-shadow: 
+    2px 2px 5px rgba(0, 0, 0, 0.2),   /* ظل خفيف */
+    0 0 25px rgba(135, 206, 250, 0.6); /* هالة زرقاء مثل السماء */
+  background: none;
+   
+  padding: 15px;
+}
+
+.navbar-toggler {
+  border: none; /* لو ما بدك حدود */
+  background-image: none; /* إلغاء الأيقونة الافتراضية */
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.navbar-toggler:hover{
+    transform: rotate(90deg) scale(2.2);
+    transition: all 0.3s ease-in-out;
+}
+.navbar {
+ background: linear-gradient(to bottom, #5e5e5f, #d2d4d5);
+  
+ 
+
+}
+
+.c1{
+   
+  justify-content: center; /* أفقي */
+  align-items: center;     /* عمودي */
+             /* ارتفاع الشاشة بالكامل */
+  margin-top:100px;
+}
+.body{
+    justify-content: center;
+    
+}
+.cc1{
+  display: block;
+  justify-content: center; /* أفقي */
+  align-items: center;     /* عمودي */
+             /* ارتفاع الشاشة بالكامل */
+  margin-top:100px;
+}
+.cool-btn {
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color:  #5e5e5f;
+  background: linear-gradient(135deg, #fff, #ffff); /* Gradient */
+  border: none;
+  border-radius: 50px; /* شكل كبسولة */
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(80, 80, 80, 0.4); /* ظل ناعم */
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0px;
+}
+
+/* تأثير اللمعان عند المرور */
+.cool-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-25deg);
+  transition: 0.5s;
+}
+
+.cool-btn:hover::before {
+  left: 100%;
+}
+
+.cool-btn:hover {
+  transform: scale(1.08); /* يكبر شوي */
+  box-shadow: 0 8px 25px #5e5e5f; /* ظل أقوى */
+}
+
+/* حركة صغيرة عند الضغط */
+.cool-btn:active {
+  transform: scale(0.95);
+}
+.cool-input {
+  padding: 12px 20px;
+  font-size: 18px;
+  border: 2px solid #5e5e5f;
+  border-radius: 50px; /* شكل كبسولة */
+  outline: none;
+  background: rgba(0,0,0,0.1);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(62, 62, 62, 0.4);
+  margin-top: 5%;
+}
+
+/* Placeholder */
+.cool-input::placeholder {
+  color: #ccc;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+/* عند التركيز */
+.cool-input:focus {
+  border-color: #5e5e5f;
+  box-shadow: 0 0 20px  #5e5e5f, 0 0 40px  #5e5e5f, 0 0 60px #5e5e5f;
+  background: rgba(0,0,0,0.3);
+}
+
+/* حركة عند الكتابة */
+.cool-input:focus::placeholder {
+  color:#ccc;
+}
+.brand3{
+  background-color: #5e5e5f !important;
+}
+.ul1{
+  list-style: none;
+  padding: 0;
+  margin-left: 40% ;
+  margin-right: 40%;
+  
+  
+}
+.ul1 li{
+  margin-bottom: 10px;
+  color: #5e5e5f;
+  font-size: 18px;
+  font-weight: bold;
+ 
+  border:#b6b6bb;
+     
+ 
+  font-weight: bold;
+  color:  #5e5e5f;
+ 
+  border-radius: 50px; /* شكل كبسولة */
+   
+   
+}
+.ul1 li:hover{
+  background-color: #5e5e5f;
+  color: #fff;
+  
+}
