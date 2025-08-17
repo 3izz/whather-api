@@ -35,7 +35,7 @@
   justify-content: center; /* أفقي */
   align-items: center;     /* عمودي */
              /* ارتفاع الشاشة بالكامل */
-  margin-top:100px;
+  margin-top:150px;
 }
 .body{
     justify-content: center;
@@ -153,4 +153,5 @@
   background-color: #5e5e5f;
   color: #fff;
   
+
 }
